@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI EXTREME 2026 – Problem Statement Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="top">
+  <span class="brand">Sanjivani University</span>
+  <span class="dept">Department of Computer Applications</span>
+</header>
+
+<main>
+  <section class="hero" id="gate">
+    <p class="kicker">Software × Hardware AI Prototype Challenge</p>
+    <h1>AI EXTREME <span class="yr">2026</span></h1>
+    <h2>Topic / Problem Statement Explanation Portal</h2>
+    <p class="sub">Enter your assigned access code to view your problem statement and its detailed explanation.</p>
+
+    <div class="card lock" id="lockCard">
+      <label for="code">Enter Your Access Code</label>
+      <div class="row">
+        <input id="code" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="AIEX•••••••••" maxlength="40">
+        <button id="go" type="button"><span class="bt">ENTER / VIEW PROBLEM</span><span class="spin" aria-hidden="true"></span></button>
+      </div>
+      <p id="msg" class="msg" role="alert" aria-live="polite"></p>
+      <p class="hint">Codes are not case-sensitive. Extra spaces are ignored.</p>
+    </div>
+  </section>
+
+  <section id="result" class="result" hidden>
+    <p class="kicker">AI EXTREME 2026</p>
+    <h2 class="assigned">Your Assigned Problem Statement</h2>
+    <article class="card paper">
+      <span id="track" class="track"></span>
+      <h3 class="label">Problem Statement</h3>
+      <h1 id="ptitle" class="ptitle"></h1>
+      <h3 class="label ex">Problem Statement Explanation</h3>
+      <div id="body" class="body"></div>
+    </article>
+    <button id="close" type="button" class="ghost">Close and clear this page</button>
+  </section>
+</main>
+
+<footer>
+  <strong>AI EXTREME 2026</strong>
+  <span>Software × Hardware AI Prototype Challenge</span>
+  <span>Department of Computer Applications · Sanjivani University</span>
+  <span class="credit">Designed and Developed by © Vikas Kumar, School of Engineering and Technology, Sanjivani University</span>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
